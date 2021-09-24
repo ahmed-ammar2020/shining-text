@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color:#000;
+}
+.content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+h1{
+    font-size:5rem;
+    background:-webkit-linear-gradient(right,#000,#fff,#000);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:animated 1.5s ease-in-out infinite;
+    background-size:80%;
+    background-repeat:no-repeat;
+}
+@keyframes animated{
+    0%{
+        background-position:-500%;
+    }
+    100%{
+        background-position:500%;
+    }
+}
